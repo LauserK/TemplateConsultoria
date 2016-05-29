@@ -1,0 +1,482 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+@font-face {
+    font-family: 'icofonts';
+    src:url('../fonts/icofonts.eot?8jyciy');
+    src:url('../fonts/icofonts.eot?#iefix8jyciy') format('embedded-opentype'),
+        url('../fonts/icofonts.ttf?8jyciy') format('truetype'),
+        url('../fonts/icofonts.woff?8jyciy') format('woff'),
+        url('../fonts/icofonts.svg?8jyciy#icofonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icofonts';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-down:before {
+    content: "\e600";
+}
+.icon-google-plus:before {
+    content: "\e601";
+}
+.icon-facebook:before {
+    content: "\e602";
+}
+.icon-twitter:before {
+    content: "\e603";
+}
+.icon-youtube:before {
+    content: "\e604";
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #D8D8D8;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.container {
+    background-color: red;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+
+    /* FLEX */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* ==========================================================================
+   Utils Styles
+   ========================================================================== */
+
+.btn {
+    -moz-transition: all .3s ease;
+    -webkit-appearance: none;
+    -webkit-transition: all .3s ease;
+    background: #fff;
+    border-radius: 25px;
+    border: 2px solid #007ee5;   
+    color: #007ee5;
+    display: inline-block;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1;
+    
+    padding: 1rem 1.8rem 1rem 1.8rem;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.btn-trans {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-trans:hover {
+    background-color: #fff;
+    color: rgb(33,49,100);
+}
+
+/* ==========================================================================
+   End of Utils Styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
+
+.header{
+    padding: 1em;
+    width: 100%;
+    background-color: #fff;    
+    position: relative;
+
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content:;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header__logo span{
+    font-size: 1.5em;
+}
+
+.header__nav {
+    width:35%;
+    font-family: "Roboto", Arial, sans-serif;
+
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__nav a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:10px;
+    font-weight: 300;
+    transition: .7s;
+
+    /* Flexbox */
+    flex-grow:1;
+}
+
+.header__nav a:hover {
+    /* background-color: #F0F0F0; */
+    color: rgb(33,49,100);
+}
+
+.burger__buttom {
+    display: none;
+    border-radius: .4rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    height: auto;
+    overflow: hidden;
+    padding: .2rem;
+    position: absolute;
+    right: 3%;
+    top: 1;
+    transition: .5s;
+}
+
+.burger__buttom:after {
+    content: "☰";
+    vertical-align: top;
+}
+
+.burger__buttom:hover {
+    background-color: #D0D0D0;
+}
+
+/* ==========================================================================
+   End of Header Styles
+   ========================================================================== */
+
+
+
+
+
+
+
+/* ==========================================================================
+   Banner Styles
+   ========================================================================== */
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 350px;
+    
+    /* FLEX */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    content: '';
+    opacity: 0.9;
+    z-index: 2;    
+    background-color: rgb(33,49,100);
+    left: 0;
+}
+
+.banner__background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    z-index: 0;
+    background-position: 50% 50% !important;
+}
+
+.banner__content {
+    color: white;    
+    position: relative;    
+    z-index: 3;
+    text-align: center;  
+}
+
+.banner__title {
+    font-family: "Roboto", Arial, sans-serif;    
+}
+
+/* ==========================================================================
+   End of Banner Styles
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Features Styles
+   ========================================================================== */
+
+.features {
+    background-color: #fff;
+    width: 100%;
+    height: 250px;
+
+    /* FLEX */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 0 1 auto;
+    justify-content: center;    
+}
+
+.features__item {
+    width: 30%;
+    max-width: 30%;   
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.features__item h2 {
+    color: rgb(33,49,100);
+    margin-bottom: .5rem;
+    font-weight: 300;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.features__item p {
+    max-width: 300px;
+    margin: 0 auto 1rem;
+    font-weight: 300;
+}
+
+.features__action {
+    color: rgb(33,49,100);
+    font-weight: 700;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+
+.features__action:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   End of Header Styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Trust Styles
+   ========================================================================== */
+
+.trust {
+    background-color: rgb(33,49,100);
+    color: #fff;    
+    height: 280px;
+    text-align: center;
+    width: 100%;    
+
+    /* FLEX */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    flex: 0 1 auto;
+    justify-content: space-around; 
+}
+
+.trust__header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.trust__header h2 {
+    font-weight: 300;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.trust__item {
+    flex-basis: 20%;
+}
+
+.trust__item img {
+    width: 100%;
+}
+
+/* ==========================================================================
+   End Trust Styles
+   ========================================================================== */
+
+
+
+
+
+
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+.footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    color: rgb(33,49,100);
+
+    /* FLEX */
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;    
+}
+
+.footer__col {
+    width: 50%;
+}
+
+.footer__title {
+    font-weight: 700;
+}
+
+.footer__social{
+    text-align: right;
+}
+
+.social__footer a{
+    color: rgb(33,49,100);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: 1s;
+}
+
+.social__footer a:hover {
+    color: #17244F;
+}
+
+.social__footer a:last-child {
+    margin-right: 0;
+}
+
+/* ==========================================================================
+   End Footer Styles
+   ========================================================================== */
+
+@media screen and (max-width: 48em){
+
+    .container {
+        width: 100%;
+    }
+    
+    .header__logo {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .burger__buttom {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+        width: 100%;
+    }
+
+    .header__nav a {
+        display: block;
+        width: 100%;
+    }
+
+    .banner__title {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .features {
+        height: 550px;
+    }
+
+    .features__item {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .trust {
+        max-height: 700px;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .trust__item {
+        flex-basis: 80%;
+    }
+
+    .footer__col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer__col:last-child {
+        margin-bottom: 0;
+    }
+}
